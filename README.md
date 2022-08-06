@@ -1,4 +1,4 @@
-# CURSO TÉCNICO: NODE.JS
+# CURSO TÉCNICO \#6: INTEGRADOR
 
 ## Premisas:
 
@@ -18,7 +18,7 @@ El práctico Integrador deberá:
 
 3.  El recurso elegido por la temática debe ser geolocalizable.
 
-4.  Se debe incluir un campo a una URL de imagen. Por ejemplo: `https://i.imgur.com/jLfg3iO.png`
+4.  Se debe incluir un campo a una URL de imagen.
 
 ## Actividades:
 
@@ -51,19 +51,4 @@ Programación de los endpoints para un CRUD de un recurso.
 
 -   PATCH :: /resource/:id \-\--\> Edita un resource con los datos
     enviados en body.
-
-## Variables de entorno, secretos, dotenv
-Enviar el archivo .env con las credenciales de acceso a MongoDB **SOLO POR CORREO**
-**NO SUBIR A GITHUB**
-
-Hacer whitelist a todas las IPs en Mongo Atlas hasta que se haga la corrección. Una vez recibida la devolución, dar de baja el whitelist.
-## Entrega
-La entrega debe ser enviando un correo con el link del Repositorio del proyecto ó el link a la pull request (si es que hicieron un Fork).
-
-Enviar a marcos.pena@incluit.com
-
-CC: Jonathan Brizio <jonathan.brizio@incluit.com>
-
-CC: trainings@incluit.com
-
 
