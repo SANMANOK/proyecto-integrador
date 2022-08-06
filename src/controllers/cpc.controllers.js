@@ -1,7 +1,6 @@
 const config = require('config');
 const axios = require('axios').default;
 const Cpc = require('../models/cpc.model');
-const cpc = require('../models/cpc.model');
 const { saveCpc, deleteCpc } = require('../services/cpc.services');
 
 
@@ -81,12 +80,12 @@ async function updateCpcById(req, res) {
     const { id } = req.params;
     const data = req.body;
     await Cpc.findById(id)
-        .then(data => {
-            Cpc.cpcNumber = data.cpcNumber;
-            Cpc.cpcName = data.cpcName;
-            Cpc.coordinates = data.coordinates;
-            Cpc.dependencies = data.dependencies;
-            Cpc.save();
+        .then(cpc => {
+            cpc.cpcNumber = data.cpcNumber;
+            cpc.cpcName = data.cpcName;
+            cpc.coordinates = data.coordinates;
+            cpc.dependencies = data.dependencies;
+            cpc.save();
             res.json({
                 opetation: 'Edit info CPC',
                 msj: 'Ok',
@@ -100,3 +99,4 @@ async function updateCpcById(req, res) {
 };
 
 module.exports = { getAllCpcs, getCpcById, addCpc, deleteCpcById, updateCpcById };
+

@@ -12,4 +12,4 @@ async function deleteCpc(id){
 }
 
 
-module.exports = { saveCpc, deleteCpc }
+module.exports = { saveCpc, deleteCpc };
